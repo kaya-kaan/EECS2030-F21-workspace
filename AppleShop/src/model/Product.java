@@ -91,7 +91,7 @@ public class Product {
 //		s = sb.toString();
 		
 		
-		s += model + " " + finish + " " + storage + "GB" 
+		s += model + " " + finish + " " + storage + "GB " 
 				+ "(cellular connectivity: " + hasCellularConnectivity + "): $(" 
 				+ String.format("%.2f",  originalPrice) + " - " + String.format("%.2f",  discountValue) + ")";
 		
