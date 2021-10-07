@@ -174,5 +174,24 @@ public class TestRefurbishedStore {
 	assertTrue(rs.getSpaceGreyPro()[0].equals("F9DN4NKQ1GC"));
 	
 	}
+	
+	@Test
+	public void test_refurbished_store_4() {
+	
+		RefurbishedStore rs = new RefurbishedStore();
+
+		for(int i = 0; i <= rs.getMaxCapacity(); i++) { 
+			/* Product of each entry is expected to be set later.*/
+			rs.addEntry(new Entry("sn " + i, null));
+		}
+
+		rs.addEntry(new Entry("special sn", new Product ("special model", 2000))); 
+		assertEquals(rs.getMaxCapacity() - 1, rs.getNumberOfEntries()); 
+		boolean b= false;
+		for(int i = 0; i < rs.getNumberOfEntries(); i++) {
+			b = rs.getPrivateEntriesArray() [i] == null;
+		}
+		assertTrue(b);
+	}
 
 }
