@@ -15,7 +15,7 @@ public class Test {
 		Person[] persons = {p3, p0, p1, p2};
 		p3 = persons[0];
 		persons[1] = p2;
-		System.out.println("Done!");
+		System.out.println((double)3.16521354);
 		
 	}
 	
