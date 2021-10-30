@@ -4,18 +4,14 @@ public class Test {
 
 	public static void main(String[] args) {
 		
-		Person p0 = new Person("Suyeon");
-		Person p1 = new Person("Yuna");
-		Person p2 = new Person("Sunhye");
-		Person p3 = new Person("Jihye");
+		int[] ia = {3, 5, 7, 9};
+		int i = 4;
 		
-		p3 = p0;
-		p1 = p2;
-		
-		Person[] persons = {p3, p0, p1, p2};
-		p3 = persons[0];
-		persons[1] = p2;
-		System.out.println((double)3.16521354);
+		if(ia[i] > 0 || i>= ia.length) {
+			System.out.println("tru");
+		}else{
+			System.out.println("f");
+		}
 		
 	}
 	
