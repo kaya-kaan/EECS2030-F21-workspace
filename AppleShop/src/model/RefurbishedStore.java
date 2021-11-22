@@ -109,5 +109,9 @@ public class RefurbishedStore {
 			
 			return sns;
 		}
+		
+		public int getMaxCapacity() {
+			return this.MAX_CAPACITY;
+		}
 
 }
