@@ -2,29 +2,28 @@ package console_apps;
 
 import java.util.Scanner;
 
-import model.Product;
+
 
 public class ProductApp {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner input = new Scanner(System.in);
+		String[] strasd = new String[3];
 		
-		Product p = new Product();
-		System.out.println(p);
-	
-		Product p2 = new Product("iPad Pro 12.9", 1289.00);
-		System.out.println(p2);
-	
-		System.out.println("Enter a model:");
-		String model = input.nextLine();
-		System.out.println("Enter the original price:");
-		double op = input.nextDouble();
-		Product p3 = new Product(model, op);
-		System.out.println(p3);
+		String a = "a";
+		String b = "b";
+		String c;
 		
-		input.close();
-		
-	}
+		strasd[0] = a;
+		strasd[1] = b;
+		strasd[2] = c;
 
-}
+		System.out.println(strasd[0]);
+		System.out.println(strasd[1]);
+		System.out.println(strasd[2]);
+	}
+	}
+	
+	
+
+
