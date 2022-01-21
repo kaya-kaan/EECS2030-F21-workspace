@@ -12,7 +12,7 @@ public class ProductApp {
 		
 		String a = "a";
 		String b = "b";
-		String c;
+		String c = "Course final grade:";
 		
 		strasd[0] = a;
 		strasd[1] = b;
